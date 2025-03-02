@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+
+[node name="DialogBox" type="Polygon2D"]
+position = Vector2( 0, -200 )
+color = Color( 0.156863, 0.156863, 0.156863, 1 )
+polygon = PoolVector2Array( 0, 248, 0, 200, 272, 200, 272, 248 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 8.0
+margin_top = 208.0
+margin_right = 264.0
+margin_bottom = 240.0
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.05
+[connection signal="timeout" from="Timer" to="RichTextLabel" method="_on_Timer_timeout"]

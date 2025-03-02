@@ -1,0 +1,354 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/EXP-System-Dialog/Resource_EditorStory/EXP_EditorStory.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+TYPE = "EXP_Story_editor"
+names = {
+"Final Interaction": 5,
+"Opening Dialogue": 1,
+"Second Interaction": 3,
+"Sound Cues": 2,
+"Third_Interaction": 4
+}
+story = {
+1: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "New Dialog - Enter Human Readable Description.",
+"name": "Opening Dialogue",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 40, 220 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<dialog>Why did you come here?</dialog>
+<music_cue>cue_1</music_cue>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 40, 400 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<dialog>What do you hope to find?</dialog>
+<music_cue>cue_2</music_cue>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 40, 560 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<dialog>I cannot know. Nor can I lead you to it.</dialog>
+<music_cue>cue_8</music_cue>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 540, 60 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<dialog>Only you can seek it, little wanderer.</dialog>
+<music_cue>cue_9</music_cue>",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 540, 260 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+2: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "New Dialog - Enter Human Readable Description.",
+"name": "Sound Cues",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "{
+\"cue_1\" : \"res://Sounds/Cue 1.wav\",
+\"cue_2\" : \"res://Sounds/Cue 2.wav\",
+\"cue_3\" : \"res://Sounds/Cue 3.wav\",
+\"cue_4\" : \"res://Sounds/Cue 4.wav\",
+\"cue_5\" : \"res://Sounds/Cue 5.wav\",
+\"cue_6\" : \"res://Sounds/Cue 6.wav\",
+\"cue_7\" : \"res://Sounds/Cue 7.wav\",
+\"cue_8\" : \"res://Sounds/Cue 8.wav\",
+\"cue_9\" : \"res://Sounds/Cue 9.wav\",
+\"cue_10\" : \"res://Sounds/Cue 10.wav\",
+\"cue_11\" : \"res://Sounds/Cue 11.wav\",
+\"cue_12\" : \"res://Sounds/Cue 12.wav\",
+\"cue_13\" : \"res://Sounds/Cue 13.wav\",
+\"cue_14\" : \"res://Sounds/Cue 14.wav\",
+\"cue_15\" : \"res://Sounds/Cue 15.wav\",
+\"cue_16\" : \"res://Sounds/Cue 16.wav\",
+\"cue_17\" : \"res://Sounds/Cue 17.wav\"
+}
+",
+"type": "line"
+}
+}
+},
+3: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "New Dialog - Enter Human Readable Description.",
+"name": "Second Interaction",
+"nodes": {
+1: {
+"graph_offset": Vector2( -58, 2 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -68, 194 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_13</music_cue>
+<dialog>What compells you to keep going, little wanderer?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 439, 5 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_12</music_cue>
+<dialog>Many have traveled this way before, and abandoned the path.</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 440, 191 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_11</music_cue>
+<dialog>Why haven't you?</dialog>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 260, 400 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+4: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "New Dialog - Enter Human Readable Description.",
+"name": "Third_Interaction",
+"nodes": {
+1: {
+"graph_offset": Vector2( -119, -44 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -120, 158.167 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_5</music_cue>
+<dialog>In your drive to find what you seek, you have made it impossible for you to return.</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 390, -44.8333 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_14</music_cue>
+<dialog>It is curious. Your determination.</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 388, 164.167 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_16</music_cue>
+<dialog>You have devoted yourself to this journey. I do not know whether I should pity you or praise you.</dialog>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 171, 322.167 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+5: {
+"available_nid": [ 10 ],
+"groups": [  ],
+"human_readable_description": "New Dialog - Enter Human Readable Description.",
+"name": "Final Interaction",
+"nodes": {
+1: {
+"graph_offset": Vector2( 264, -204.833 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 509, -6.83334 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_10</music_cue>
+<dialog>Perhaps you will. I do not know.</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -17, -8.83334 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_7</music_cue>
+<dialog>Do you think that you will find whatever it is that  you seek?</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 473, 200.167 ),
+"links": {
+0: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_4</music_cue>
+<dialog>I am inclined to doubt it. But I cannot know for sure.</dialog>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( -35, 193.167 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_3</music_cue>
+<dialog>If you do find it, will it do everything you hope it will? </dialog>",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 488, 390.167 ),
+"links": {
+0: 8
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_6</music_cue>
+<dialog>Little wanderer...</dialog>",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( -24, 375.167 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_15</music_cue>
+<dialog>I hope that you find whatever it is that you need.</dialog>",
+"type": "line"
+},
+8: {
+"graph_offset": Vector2( -30, 556.167 ),
+"links": {
+0: 9
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<music_cue>cue_17</music_cue>
+<dialog>I wish you luck.</dialog>",
+"type": "line"
+},
+9: {
+"graph_offset": Vector2( 476, 565.167 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+}
+}
+available_dids = [  ]
+groups = [  ]

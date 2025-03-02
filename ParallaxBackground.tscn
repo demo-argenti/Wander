@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Sprites/Backgrounds/Distant Dunes.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Backgrounds/Wall Close.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Backgrounds/Ruined Walls 2.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Backgrounds/Wall Distant.png" type="Texture" id=4]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="Dune" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.1, 1 )
+motion_mirroring = Vector2( 320, 0 )
+
+[node name="Distant Dunes" type="Sprite" parent="Dune"]
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 0, -32 )
+
+[node name="Ruin" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.2, 1 )
+motion_mirroring = Vector2( 320, 0 )
+
+[node name="Ruins" type="Sprite" parent="Ruin"]
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( 0, -16 )
+
+[node name="Far Wall" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.5, 1 )
+motion_mirroring = Vector2( 320, 0 )
+
+[node name="Wall Distant" type="Sprite" parent="Far Wall"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Close Wall" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.6, 1 )
+motion_mirroring = Vector2( 320, 0 )
+
+[node name="Wall Close" type="Sprite" parent="Close Wall"]
+texture = ExtResource( 2 )
+centered = false
